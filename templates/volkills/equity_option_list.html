@@ -1,0 +1,71 @@
+{% extends "./base.html" %}
+
+{% block results %}
+	<div>
+		<div>
+			<span id='content_left'>NPV</span><span id="NPV">{{ instrument.result_npv }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Delta</span><span id="Delta">{{ instrument.result_delta }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Gamma</span><span id="Gamma">{{ instrument.result_gamma }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Theta</span><span id="Theta">{{ instrument.result_theta }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Vega</span><span id="Vega">{{ instrument.result_vega }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Rho</span><span id="Rho">{{ instrument.result_rho }}</span>
+		</div>
+		<div>
+			<span id='content_left'>IV</span><span id="Implied Volatility">{{ instrument.result_implied_volatility }}</span>
+		</div>
+		<div>
+			<span id='content_left'>itmCashProbability</span><span id="Theta per Day">{{ instrument.result_theta_per_day }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Strike Sensitivity</span><span id="Strike Sensitivity">	{{ instrument.result_strike_sensitivity }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Dividend Rho</span><span id="Dividend Rho">{{ instrument.result_dividend_rho }}</span>
+		</div>
+	</div>
+{% endblock results %}
+
+{% block terms_and_conditions %}
+	<div>
+		<div>
+			<span id='content_left'>Style</span><span>{{ instrument.style }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Val Date</span><span>{{ instrument.valuation_date }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Expiry Date</span><span>{{ instrument.expiry_date }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Underlying Spot</span><span>{{ instrument.underlying_price }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Strike Price</span><span>{{ instrument.strike_price }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Put or Call</span><span>{{ instrument.put_or_call }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Interest Rate</span><span>{{ instrument.interest_rate }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Dividend Yield</span><span>{{ instrument.dividend_yield }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Market Value</span><span>{{ instrument.market_value }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Volatility Rate</span><span>{{ instrument.volatility_rate }}</span>
+		</div>
+	</div>
+{% endblock terms_and_conditions %}

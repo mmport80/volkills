@@ -1,0 +1,122 @@
+{% extends "./base.html" %}
+
+{% block results %}
+	<div>
+		<div>
+			<span id='content_left'>NPV</span><span id="NPV">{{ instrument.result_npv }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Fixed Leg BPS</span><span id="Fixed Leg BPS">{{ instrument.result_fixed_leg_bps }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Floating Leg BPS</span><span id="Floating Leg BPS">{{ instrument.result_floating_leg_bps }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Fair Rate</span><span id="Fair Spread">{{ instrument.result_fair_spread }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Fair Spread</span><span id="Fair Rate">{{ instrument.result_fair_rate }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Calibrated Spread</span><span id="Calibrated Spread">{{ instrument.result_spread }}</span>
+		</div>
+	</div>
+{% endblock results %}
+
+{% block terms_and_conditions %}
+	<div>
+		<div>
+			<span id='content_left'>Val Date</span><span>{{ instrument.valuation_date }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Start Date</span><span>{{ instrument.start_date }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Maturity Date</span><span>{{ instrument.maturity_date }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Face</span><span>{{ instrument.face }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Floating Frequency</span><span>{{ instrument.floating_leg_frequency }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Fixed Frequency</span><span>{{ instrument.fixed_leg_frequency }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Fixed Rate</span><span>{{ instrument.fixed_rate }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Spread</span><span>{{ instrument.spread }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Market Value</span><span>{{ instrument.market_value }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 1M</span><span>{{ instrument.term_structure_1m }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 3M</span><span>{{ instrument.term_structure_3m }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 6M</span><span>{{ instrument.term_structure_6m }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 1y</span><span>{{ instrument.term_structure_1y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 2y</span><span>{{ instrument.term_structure_2y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 3y</span><span>{{ instrument.term_structure_3y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 5y</span><span>{{ instrument.term_structure_5y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 7y</span><span>{{ instrument.term_structure_7y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 10y</span><span>{{ instrument.term_structure_10y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 20y</span><span>{{ instrument.term_structure_20y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Term Structure 30y</span><span>{{ instrument.term_structure_30y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 1M</span><span>{{ instrument.reference_index_term_structure_1m }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 3M</span><span>{{ instrument.reference_index_term_structure_3m }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 6M</span><span>{{ instrument.reference_index_term_structure_6m }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 1y</span><span>{{ instrument.reference_index_term_structure_1y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 2y</span><span>{{ instrument.reference_index_term_structure_2y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 3y</span><span>{{ instrument.reference_index_term_structure_3y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 5y</span><span>{{ instrument.reference_index_term_structure_5y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 7y</span><span>{{ instrument.reference_index_term_structure_7y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 10y</span><span>{{ instrument.reference_index_term_structure_10y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 20y</span><span>{{ instrument.reference_index_term_structure_20y }}</span>
+		</div>
+		<div>
+			<span id='content_left'>Reference Index 30y</span><span>{{ instrument.reference_index_term_structure_30y }}</span>
+		</div>
+	</div>
+{% endblock terms_and_conditions %}
